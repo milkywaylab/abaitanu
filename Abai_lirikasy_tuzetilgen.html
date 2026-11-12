@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Абай лирикасының ерекшеліктері</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;700&family=Noto+Sans:wght@400;600&display=swap">
+<style>
+:root{
+  --bg:#F7ECDD;--surface:#FFF8EE;--ink:#3A2A1E;--muted:#6B5545;--sky:#2F6F73;--sky-soft:#F6DDBA;--gold:#C47F0A;--gold-soft:#FBE3B8;--line:#E6D2B6;--ok:#1B7F4B;--bad:#B3321F;
+  --serif:"Noto Serif",Georgia,"Times New Roman",serif;--sans:"Noto Sans","Segoe UI",Arial,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;
+}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--sans)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:10}
+h1,h2,h3{font-family:var(--serif);line-height:1.2;margin:0}
+a{color:var(--sky)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--surface);border-bottom:1px solid var(--line);display:flex;gap:4px;overflow-x:auto;padding:8px 12px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--ink);padding:8px 14px;border-radius:999px;font-weight:600;font-size:15px}
+nav a:hover{background:var(--sky-soft)}
+.orn{height:34px;background-color:var(--sky);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='34' viewBox='0 0 68 34'%3E%3Cpath d='M0 17 L17 2 L34 17 L17 32Z M34 17 L51 2 L68 17 L51 32Z' fill='none' stroke='%23F6E7BD' stroke-width='2'/%3E%3Cpath d='M17 17 C17 9 27 9 27 15 M51 17 C51 25 41 25 41 19' fill='none' stroke='%23F6E7BD' stroke-width='2'/%3E%3C/svg%3E");background-size:68px 34px}
+header{padding:56px 20px 48px;max-width:960px;margin:0 auto}
+header h1{font-size:clamp(34px,7vw,64px);font-weight:700;letter-spacing:-.5px;max-width:14ch}
+header p.sub{font-size:19px;color:var(--muted);max-width:52ch;margin:18px 0 0}
+blockquote{margin:32px 0 0;padding:20px 24px;border-left:6px solid var(--gold);background:var(--gold-soft);border-radius:0 14px 14px 0;font:500 clamp(20px,3.4vw,28px)/1.4 var(--serif);max-width:34em}
+blockquote small{display:block;margin-top:8px;font:400 15px var(--sans);color:var(--muted)}
+main{max-width:960px;margin:0 auto;padding:0 20px 56px}
+section{padding:44px 0 8px}
+h2{font-size:clamp(26px,4.5vw,36px);margin-bottom:6px}
+.lead{color:var(--muted);margin:0 0 22px;max-width:60ch}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{margin:0}
+.goal{border-top:5px solid var(--sky)}
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:3px solid var(--gold)}
+.tl li{position:relative;padding:0 0 18px 18px}
+.tl li::before{content:"";position:absolute;left:-33px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--bg)}
+.tl b{font-family:var(--serif);color:var(--sky);margin-right:6px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+summary{cursor:pointer;padding:16px 20px;font:700 18px var(--serif);list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:600 26px var(--sans);color:var(--gold);flex:none}
+details[open] summary::after{content:"–"}
+details[open] summary{background:var(--sky-soft)}
+.body{padding:16px 20px 20px}
+.body ul{margin:8px 0 0;padding-left:20px}
+.tag{display:inline-block;background:var(--sky-soft);border-radius:8px;padding:2px 10px;margin:3px 4px 3px 0;font-size:15px}
+.fc{background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:18px;text-align:left;font:inherit;color:inherit;cursor:pointer;min-height:130px;width:100%}
+.fc strong{font:700 20px var(--serif);display:block;color:var(--sky)}
+.fc span{display:block;margin-top:8px}
+.fc[aria-pressed="false"] span{color:var(--muted);font-size:15px}
+.fc[aria-pressed="true"]{border-color:var(--gold);background:var(--gold-soft)}
+.q{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:14px}
+.q h3{font-size:18px;margin-bottom:12px}
+.opt{display:block;width:100%;text-align:left;font:inherit;color:inherit;background:var(--bg);border:2px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:8px;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--sky)}
+.opt.ok{border-color:var(--ok);background:var(--sky-soft)}
+.opt.bad{border-color:var(--bad)}
+.fb{margin:6px 0 0;font-weight:600;min-height:1.2em}
+.score{font:700 22px var(--serif);padding:16px 20px;background:var(--gold-soft);border-radius:14px;margin-top:6px}
+button.act{font:600 16px var(--sans);background:var(--sky);color:#fff;border:0;border-radius:999px;padding:12px 24px;cursor:pointer;margin-top:10px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px;background:var(--surface);border-radius:14px;overflow:hidden}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--sky);color:#fff;font-family:var(--serif)}
+td:first-child{white-space:nowrap;font-weight:600;color:var(--sky)}
+.chk{list-style:none;padding:0;margin:0}
+.chk li{padding:6px 0}
+.chk label{cursor:pointer;display:flex;gap:10px;align-items:flex-start}
+.chk input{margin-top:6px;width:18px;height:18px;accent-color:var(--sky)}
+footer{text-align:center;color:var(--muted);padding:28px 20px 40px;font-size:15px}
+@media print{nav,.orn,button.act{display:none}body{background:#fff}}
+</style>
+</head>
+<body>
+<div class="orn" aria-hidden="true"></div>
+<nav aria-label="Сабақ бөлімдері">
+<a href="#omir">Абай</a><a href="#erekshelik">Ерекшеліктер</a><a href="#talda">Талдау</a><a href="#termin">Терминдер</a><a href="#test">Тест</a><a href="#zertteushi">Зерттеушілер</a><a href="#qorytyndy">Қорытынды</a><a href="#uy">Үй жұмысы</a>
+</nav>
+<header>
+<p class="sub" style="margin:0 0 14px;font-weight:600">Автор:Сайлаубай Жадыра</p>
+<h1>Абай лирикасының ерекшеліктері</h1>
+<p class="sub">Сабаққа қажеттінің бәрі бір бетте: теория, талдау жоспары, терминдер, тест, зерттеушілер және үй жұмысы.</p>
+<blockquote>Өлең – сөздің патшасы, сөз сарасы<small>Абай Құнанбайұлы</small></blockquote>
+</header>
+<main>
+
+<section id="omir">
+<h2>Абай туралы қысқаша</h2>
+<p class="lead">Лирикасын түсіну үшін ақынның жолындағы негізгі белестер.</p>
+<ul class="tl">
+<li><b>1845</b>Шыңғыстау өңірінде дүниеге келді.</li>
+<li><b>Жастық шақ</b>Семейде медреседе оқып, шығыс әдебиетімен, кейін орыс мәдениетімен танысты.</li>
+<li><b>1880–1890 жылдар</b>Өлеңдері мен аудармалары көбейіп, лирикасы кемелденді.</li>
+<li><b>Кейінгі жылдар</b>«Қара сөздер» арқылы философиялық ойларын жүйеледі.</li>
+<li><b>1904</b>Жидебайда қайтыс болды.</li>
+</ul>
+</section>
+
+<section id="erekshelik">
+<h2>Лирикасының ерекшеліктері</h2>
+<p class="lead">Әр бөлімді ашып, мысалдарды оқыңыз.</p>
+
+<details open><summary>1. Тақырып ауқымы</summary><div class="body">
+<p>Абай лирикасы бір тақырыппен шектелмейді. Негізгі топтар:</p>
+<ul>
+<li><b>Табиғат лирикасы:</b> <span class="tag">«Жаз»</span><span class="tag">«Күз»</span><span class="tag">«Қыс»</span><span class="tag">«Жазғытұры»</span></li>
+<li><b>Махаббат лирикасы:</b> <span class="tag">«Көзімнің қарасы»</span><span class="tag">«Айттым сәлем, Қаламқас»</span></li>
+<li><b>Әлеуметтік-сыншыл лирика:</b> <span class="tag">«Қалың елім, қазағым»</span><span class="tag">«Болыс болдым, мінеки»</span></li>
+<li><b>Философиялық-ойшыл лирика:</b> <span class="tag">«Адамның кейбір кездері»</span><span class="tag">«Алла деген сөз жеңіл»</span></li>
+<li><b>Ағартушылық лирика:</b> <span class="tag">«Ғылым таппай мақтанба»</span></li>
+</ul></div></details>
+
+<details><summary>2. Лирикалық кейіпкер</summary><div class="body">
+<p>Абай өлеңдерінде кейіпкер көбіне ойшыл, сыншыл, өзін-өзі танып, өз заманына баға беретін адам. Ол елінің болашағын ойлайды, жалғыздықты да, сенімсіздікті де сезінеді. Ақын өзіне де қатал сын айта біледі.</p></div></details>
+
+<details><summary>3. Табиғат суреті</summary><div class="body">
+<p>Мезгіл суреттері тек көрініс емес, олар адам тіршілігімен, еңбекпен, ауыл өмірімен тығыз байланысты. Ақын бейнелеу арқылы оқырманның сезіміне әсер етеді.</p></div></details>
+
+<details><summary>4. Тіл мен форма</summary><div class="body">
+<ul>
+<li>Халық тілінің жеңілдігі мен ойдың тереңдігі қатар жүреді.</li>
+<li>Қазақ өлеңінің ұйқас түрлері мен шумақ құрылысын байытты.</li>
+<li>Теңеу, эпитет, метафора, риторикалық сұрақ жиі қолданылады.</li>
+<li>Дыбыс үндестігі (аллитерация, ассонанс) өлеңге ырғақ береді.</li>
+</ul></div></details>
+
+<details><summary>5. Шығыс және орыс әдебиетінің әсері</summary><div class="body">
+<p>Абай шығыс ақындарының дәстүрін білді, ал орыс әдебиетінен Пушкин, Лермонтов, Крылов шығармаларын қазақ тіліне аударды. Бұл қазақ поэзиясына жаңа тақырып пен форма әкелді.</p></div></details>
+
+<details><summary>6. Ақынның өнер туралы көзқарасы</summary><div class="body">
+<p>Абай үшін өлең ермек емес, ойды жеткізетін және халықты оятатын күш. Сондықтан сөз өнеріне үлкен жауапкершілікпен қарады.</p></div></details>
+</section>
+
+<section id="talda">
+<h2>Өлеңді талдау жоспары</h2>
+<p class="lead">Кез келген Абай өлеңін осы қадаммен талдаңыз. Орындағанын белгілеңіз.</p>
+<ul class="chk card">
+<li><label><input type="checkbox"> Өлеңнің тақырыбы мен негізгі идеясын анықтау</label></li>
+<li><label><input type="checkbox"> Лирикалық кейіпкер кім және не сезінеді?</label></li>
+<li><label><input type="checkbox"> Көркемдегіш құралдарды табу (теңеу, эпитет, метафора)</label></li>
+<li><label><input type="checkbox"> Ұйқас пен ырғақты байқау</label></li>
+<li><label><input type="checkbox"> Мәтіннен дәлел келтіріп, өз пікірімді айту</label></li>
+</ul>
+<h3 style="margin:26px 0 10px">Талқылау сұрақтары</h3>
+<div class="grid">
+<div class="card"><p>Абайдың ойшыл лирикасы бүгінгі жасқа не береді?</p></div>
+<div class="card"><p>Неліктен табиғат суреті Абайда тек сурет емес?</p></div>
+<div class="card"><p>Қай өлең сізге жақын және неліктен?</p></div>
+</div>
+</section>
+
+<section id="termin">
+<h2>Терминдер</h2>
+<p class="lead">Картаны басып, анықтамасын көріңіз.</p>
+<div class="grid" id="cards"></div>
+</section>
+
+<section id="test">
+<h2>Тест</h2>
+<p class="lead">Он сұрақ. Әр сұраққа бір жауап таңдаңыз: нәтиже соңында көрсетіледі.</p>
+<div id="quiz"></div>
+<div class="score" id="score" hidden></div>
+<button class="act" id="reset" hidden>Қайта бастау</button>
+</section>
+
+<section id="zertteushi">
+
+<div class="grid">
+<div class="card"><h3>Ахмет Байтұрсынұлы</h3><ul>
+<li>1913 жылы «Қазақ» газетінде Абай туралы мақала жариялады.</li>
+<li>Мақала Абайды қазақтың бас ақыны деп атаудан басталады.</li>
+<li>Абай қазақ өлеңінің қадірін арттырды деп бағалады.</li></ul></div>
+<div class="card"><h3>Мұхтар Әуезов (1897–1961)</h3><ul>
+<li>1933 жылы Қызылордада Абайдың алғашқы толық жинағын шығарды. Оған Абайдың ғылыми өмірбаянын жазып қосты.</li>
+<li>Абайдың орыс ақындарынан аударған және өңдеген өлеңдерінің бастау көздерін анықтады.</li>
+<li>«Абай жолы» роман-эпопеясы (1942–1956).</li>
+<li>«Абай Құнанбаев» монографиясы.</li></ul></div>
+<div class="card"><h3>Қайым Мұхамедханов (1916 жылы туған)</h3><ul>
+<li>1939 жылдан Абайдың ақындық мектебі мәселесін зерттеді.</li>
+<li>Осы тақырыпта 1951 жылы кандидаттық диссертация қорғады.</li>
+<li>Абай шығармаларының текстологиясымен айналысты.</li></ul></div>
+<div class="card"><h3>Зәки Ахметов</h3><ul>
+<li>«Лермонтов және Абай» (1954)</li>
+<li>«Қазақ өлеңінің құрылысы» (1964)</li>
+<li>«Қазақ поэзиясының тілі туралы» (1970)</li>
+<li>«Абайдың ақындық әлемі» (1995). Онда Абайдың махаббат лирикасы да ғылыми тұрғыдан талданған.</li>
+<li>Абай шығармалары толық жинағының төрт басылымына (1954, 1957, 1970, 1995) қатысты.</li></ul></div>
+<div class="card"><h3>Мекемтас Мырзахметұлы (1930 жылы туған)</h3><ul>
+<li>«Абай жүрген ізбенен» (1985)</li>
+<li>«Абайдың адамгершілік мұраттары» (1993)</li>
+<li>«Абай және Шығыс» (1994)</li>
+<li>«Абайтану тарихы» (1994)</li>
+<li>«Әуезов және Абай» (1997)</li></ul></div>
+<div class="card"><h3>Анықтамалық</h3><ul>
+<li>«Абай: Энциклопедия», Алматы: Атамұра, 1995.</li></ul></div>
+</div>
+</section>
+
+<section id="uy">
+<h2>Үй жұмысы және рефлексия</h2>
+<div class="grid">
+<div class="card"><h3>Базалық деңгей</h3><p>Абайдың бір өлеңін таңдап, мәнерлеп оқуға дайындалу.</p></div>
+<div class="card"><h3>Орта деңгей</h3><p>Таңдалған өлеңді талдау жоспарымен 8–10 сөйлеммен талдау.</p></div>
+<div class="card"><h3>Жоғары деңгей</h3><p>Абай ұйқасын қолданып, өз өлеңіңіздің бір шумағын жазу.</p></div>
+</div>
+<div class="card" style="margin-top:14px"><h3>Рефлексия</h3><p>Бүгін білдім… · Маған қызық болды… · Маған қиын болды… · Келесі сабақта білгім келеді…</p></div>
+</section>
+
+<section id="qorytyndy">
+<h2>Қорытынды</h2>
+<div class="card">
+<p>Абай лирикасы — адам сезімі мен терең ойды, табиғат сұлулығы мен қоғам өмірін қатар бейнелейтін бай мұра. Ақын табиғатты суреттегенде де, махаббат туралы толғанғанда да, ел мінезін сынағанда да оқырманды ойлануға жетелейді. Оның өлеңдеріндегі көркем тіл, жаңашыл ұйқас пен мазмұн тереңдігі қазақ поэзиясының өрісін кеңейтті. Сондықтан Абай лирикасын оқу — өлеңнің көркемдігін танып қана қоймай, адамгершілік, білім және өмір туралы маңызды ойларға үңілу.</p>
+</div>
+</section>
+</main>
+<footer>Абай лирикасының ерекшеліктері · сабақ материалы<br><strong>Автор:Сайлаубай Жадыра</strong></footer>
+
+<script>
+var terms=[
+["Лирика","Ақынның сезімі мен ой-толғанысын бейнелейтін әдеби түр."],
+["Лирикалық кейіпкер","Өлеңде ой-сезімін білдіретін бейне. Ол ақынның өзімен әрдайым бірдей бола бермейді."],
+["Ұйқас","Өлең жолдарының соңындағы дыбыстардың үндесуі."],
+["Эпитет","Затты нақты сипаттайтын көркемдегіш сөз."],
+["Теңеу","Бір затты екінші затқа ұқсатып айту."],
+["Риторикалық сұрақ","Жауап күтпей, ойды күшейту үшін қойылатын сұрақ."],
+["Аллитерация","Бірдей дауыссыз дыбыстардың қайталануы."]
+];
+var cards=document.getElementById("cards");
+terms.forEach(function(t){
+  var b=document.createElement("button");
+  b.className="fc";b.setAttribute("aria-pressed","false");
+  b.innerHTML="<strong></strong><span></span>";
+  b.querySelector("strong").textContent=t[0];
+  b.querySelector("span").textContent="Анықтамасын көру үшін басыңыз";
+  b.onclick=function(){
+    var on=b.getAttribute("aria-pressed")==="true";
+    b.setAttribute("aria-pressed",on?"false":"true");
+    b.querySelector("span").textContent=on?"Анықтамасын көру үшін басыңыз":t[1];
+  };
+  cards.appendChild(b);
+});
+
+var qs=[
+ {q:"«Жаз», «Күз», «Қыс», «Жазғытұры» өлеңдері Абай лирикасының қай түріне жатады?",o:["Табиғат лирикасы","Махаббат лирикасы","Философиялық лирика"],a:0},
+ {q:"«Көзімнің қарасы» мен «Айттым сәлем, Қаламқас» өлеңдерінің негізгі тақырыбы қандай?",o:["Қоғамдық сын","Махаббат сезімі","Табиғат көрінісі"],a:1},
+ {q:"«Қалың елім, қазағым» өлеңінде қандай бағыт басым?",o:["Әлеуметтік-сыншыл лирика","Табиғат лирикасы","Махаббат лирикасы"],a:0},
+ {q:"«Ғылым таппай мақтанба» өлеңі қай тақырыптық топқа жақын?",o:["Ағартушылық лирика","Табиғат лирикасы","Махаббат лирикасы"],a:0},
+ {q:"Абай өлеңдеріндегі лирикалық кейіпкер көбіне қандай тұлға ретінде көрінеді?",o:["Тек оқиғаны сырттай баяндайтын адам","Ойшыл, сыншыл, өз заманына баға беретін адам","Тек табиғатты бақылаушы адам"],a:1},
+ {q:"Абайдың табиғат лирикасында жыл мезгілдері қалай бейнеленеді?",o:["Адам өмірінен бөлек көрініс ретінде","Тек әсемдік үшін берілген сурет ретінде","Адам тіршілігімен, еңбекпен және ауыл өмірімен байланысты"],a:2},
+ {q:"Абай поэзиясындағы тіл ерекшелігін қай тұжырым дәл сипаттайды?",o:["Халық тілі мен терең ойдың қатар қолданылуы","Тек күрделі шет тілдік сөздердің қолданылуы","Күнделікті сөйлеу тілінен толық алшақ болуы"],a:0},
+ {q:"Абай лирикасында өлеңнің әсерін күшейту үшін қандай көркемдегіш құралдар қолданылады?",o:["Тек диалог пен монолог","Теңеу, эпитет, метафора және риторикалық сұрақ","Тек ресми-ғылыми терминдер"],a:1},
+ {q:"Абай қазақ поэзиясына қандай жаңалық енгізуге үлес қосты?",o:["Өлеңдегі тақырып пен ұйқас, шумақ құрылысын байытуға","Өлеңде бейнелі сөздерді қолданудан бас тартуға","Барлық өлеңді бір ғана өлшеммен жазуға"],a:0},
+ {q:"Абайдың өлең өнеріне көзқарасы қандай?",o:["Өлең тек көңіл көтеру үшін қажет","Өлең — ойды жеткізіп, халықты оятатын жауапты өнер","Өлеңнің мазмұнынан тек ұйқасы маңызды"],a:1}
+];
+var quiz=document.getElementById("quiz"),scoreEl=document.getElementById("score"),resetBtn=document.getElementById("reset");
+var score,done;
+function build(){
+  quiz.innerHTML="";score=0;done=0;scoreEl.hidden=true;resetBtn.hidden=true;
+  qs.forEach(function(item,i){
+    var d=document.createElement("div");d.className="q";
+    var h=document.createElement("h3");h.textContent=(i+1)+". "+item.q;d.appendChild(h);
+    var fb=document.createElement("p");fb.className="fb";fb.setAttribute("aria-live","polite");
+    var btns=[];
+    item.o.forEach(function(text,j){
+      var b=document.createElement("button");b.className="opt";b.textContent=text;
+      b.onclick=function(){
+        btns.forEach(function(x){x.disabled=true});
+        if(j===item.a){b.classList.add("ok");fb.textContent="Дұрыс!";fb.style.color="var(--ok)";score++}
+        else{b.classList.add("bad");btns[item.a].classList.add("ok");fb.textContent="Қате. Дұрыс жауап белгіленді.";fb.style.color="var(--bad)"}
+        done++;
+        if(done===qs.length){
+          scoreEl.textContent="Нәтиже: "+score+" / "+qs.length;
+          scoreEl.hidden=false;resetBtn.hidden=false;
+        }
+      };
+      btns.push(b);d.appendChild(b);
+    });
+    d.appendChild(fb);quiz.appendChild(d);
+  });
+}
+resetBtn.onclick=function(){build();document.getElementById("test").scrollIntoView()};
+build();
+</script>
+</body>
+</html>
